@@ -20,10 +20,10 @@ insert into  students values
 -- show table
 select * from students;
 
--- AND
+-- and
  select * from students where  math>70 and city="vyara";
 
---  OR
+--  or
  select * from students where eng<60 or city="surat";
 
 --  between
