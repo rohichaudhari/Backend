@@ -33,3 +33,6 @@ select * from students where city in ("vyara","bardoli");
 
 -- NOT
 select * from students where city not in ("surat","bardoli");
+
+-- limit
+select * from students limit 3;
