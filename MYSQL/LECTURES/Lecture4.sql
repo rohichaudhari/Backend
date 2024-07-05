@@ -29,9 +29,10 @@ select * from students;
 --  between
 select * from students where math between 50 and 70;
 
+-- in
 select * from students where city in ("vyara","bardoli");
 
--- NOT
+-- NOT in
 select * from students where city not in ("surat","bardoli");
 
 -- limit
