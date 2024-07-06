@@ -61,3 +61,11 @@ select * from customers where contactfirstname like "ee%";
 -- 20. List out the maximum credit limit of customers belongs to different states
 select max(creditlimit) from customers;
 
+
+
+
+
+
+
+
+
