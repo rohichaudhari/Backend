@@ -48,18 +48,21 @@ select * from customers where contactfirstname like "S%H";
 select * from customers where contactfirstname like "S%____";
 
 -- 16. List out the customers whose first name length is exactly 8
-select contactfirstname from customers where contactfirstname like "_________"; //dout
+select contactfirstname from customers where contactfirstname like "_________";
+
 
 -- 17. List out the customers whose first name starting with a and ending with e
 select * from customers where contactfirstname like "a%e";
 
 -- 18. List out the customers whose first name contains ee
-select * from customers where contactfirstname like "ee%";
+select * from customers where contactfirstname like "%ee%";
 
 -- 19. Show Count of employees who are working in different office in the organization
+select officecode,count(*) from employees group by officeCode;
+
 
 -- 20. List out the maximum credit limit of customers belongs to different states
-select max(creditlimit) from customers;
+select max(creditlimit) from customers ;
 
 
 
