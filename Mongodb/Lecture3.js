@@ -29,6 +29,11 @@ db.userdata.find({"id":{$lte:3}});
 db.userdata.find({"id":{$in:[1,3,5]}});
 db.userdata.find({"id":{$nin:[1,3,5]}});
 
+db.userdata.find({$and:[{"username":"Antonette"},{"id":{$lte:3}}]});
+db.userdata.find({$or:[{"username":"Antonette"},{"id":{$lte:3}}]});
+db.userdata.find({$nor:[{"username":"Antonette"},{"id":{$lte:3}}]});
+db.userdata.find({"name":{$not:{$eq:"Chelsey Dietrich"}}});
+
 
 
 
