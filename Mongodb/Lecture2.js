@@ -16,6 +16,6 @@ db.data.deleteMany({"lastName":"chaudhari"});
 // drop collection
 db.collection_name.drop();
 
-//drop database
+
 
 
